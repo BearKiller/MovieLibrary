@@ -1,0 +1,17 @@
+C:\Users\kbyrkett\Documents\MovieLibrary\bin\Debug\net6.0\MovieLibrary.exe
+C:\Users\kbyrkett\Documents\MovieLibrary\bin\Debug\net6.0\MovieLibrary.deps.json
+C:\Users\kbyrkett\Documents\MovieLibrary\bin\Debug\net6.0\MovieLibrary.runtimeconfig.json
+C:\Users\kbyrkett\Documents\MovieLibrary\bin\Debug\net6.0\MovieLibrary.dll
+C:\Users\kbyrkett\Documents\MovieLibrary\bin\Debug\net6.0\MovieLibrary.pdb
+C:\Users\kbyrkett\Documents\MovieLibrary\bin\Debug\net6.0\NLog.dll
+C:\Users\kbyrkett\Documents\MovieLibrary\obj\Debug\net6.0\MovieLibrary.csproj.AssemblyReference.cache
+C:\Users\kbyrkett\Documents\MovieLibrary\obj\Debug\net6.0\MovieLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kbyrkett\Documents\MovieLibrary\obj\Debug\net6.0\MovieLibrary.AssemblyInfoInputs.cache
+C:\Users\kbyrkett\Documents\MovieLibrary\obj\Debug\net6.0\MovieLibrary.AssemblyInfo.cs
+C:\Users\kbyrkett\Documents\MovieLibrary\obj\Debug\net6.0\MovieLibrary.csproj.CoreCompileInputs.cache
+C:\Users\kbyrkett\Documents\MovieLibrary\obj\Debug\net6.0\MovieLibrary.csproj.CopyComplete
+C:\Users\kbyrkett\Documents\MovieLibrary\obj\Debug\net6.0\MovieLibrary.dll
+C:\Users\kbyrkett\Documents\MovieLibrary\obj\Debug\net6.0\refint\MovieLibrary.dll
+C:\Users\kbyrkett\Documents\MovieLibrary\obj\Debug\net6.0\MovieLibrary.pdb
+C:\Users\kbyrkett\Documents\MovieLibrary\obj\Debug\net6.0\MovieLibrary.genruntimeconfig.cache
+C:\Users\kbyrkett\Documents\MovieLibrary\obj\Debug\net6.0\ref\MovieLibrary.dll

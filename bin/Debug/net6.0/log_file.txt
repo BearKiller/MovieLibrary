@@ -1,0 +1,2 @@
+
+2024-02-15 14:20:20.2103|FATAL|Program|Not all files are present in the library folder. Ensure links.csv, movies.csv, ratings.csv, and tags.csv are in the library folder.
