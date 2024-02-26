@@ -50,11 +50,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/media/kdbyrkett/MEMOREX USB/MovieLibrary/MovieLibrary.csproj",
+      "projectUniqueName": "/home/kdbyrkett/Documents/DotNet/MovieLibrary/MovieLibrary.csproj",
       "projectName": "MovieLibrary",
-      "projectPath": "/media/kdbyrkett/MEMOREX USB/MovieLibrary/MovieLibrary.csproj",
+      "projectPath": "/home/kdbyrkett/Documents/DotNet/MovieLibrary/MovieLibrary.csproj",
       "packagesPath": "/home/kdbyrkett/.nuget/packages/",
-      "outputPath": "/media/kdbyrkett/MEMOREX USB/MovieLibrary/obj/",
+      "outputPath": "/home/kdbyrkett/Documents/DotNet/MovieLibrary/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/kdbyrkett/.nuget/NuGet/NuGet.Config"

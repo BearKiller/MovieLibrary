@@ -1,16 +1,16 @@
 ﻿using NLog;
-string path = Directory.GetCurrentDirectory() + "\\nlog.config";
+string path = Directory.GetCurrentDirectory() + "/nlog.config";
 // create instance of Logger
 var logger = LogManager.LoadConfiguration(path).GetCurrentClassLogger();
 
-string linksPath = ".\\library\\links.csv";
-string moviesPath = ".\\library\\movies.csv";
-string ratingsPath = ".\\library\\ratings.csv";
-string tagsPath = ".\\library\\tags.csv";
+string linksPath = "./library/links.csv";
+string moviesPath = "./library/movies.csv";
+string ratingsPath = "./library/ratings.csv";
+string tagsPath = "./library/tags.csv";
 
 string? resp;
 do  {
-Console.WriteLine("Enter 1 to add movie to library.");
+Console.WriteLine("\nEnter 1 to add movie to library.");
 Console.WriteLine("Enter 2 to view movie library.");
 Console.WriteLine("Enter anything else to quit.");
 
@@ -21,7 +21,7 @@ resp = Console.ReadLine();
         Console.WriteLine("Add movie to library");
 
         //Checking to see if all files are in the library folder
-        if (File.Exists(linksPath) && File.Exists(moviesPath) && File.Exists(ratingsPath) && File.Exists(tagsPath)) {
+        if (dataPathExists()) {
             Console.WriteLine("Hooray!");
 
             //TODO: Make constructors to populate the files
@@ -33,13 +33,28 @@ resp = Console.ReadLine();
 
     //Parsing the files in the library folder
     }   else if (resp == "2")   {
-        if (File.Exists(linksPath) && File.Exists(moviesPath) && File.Exists(ratingsPath) && File.Exists(tagsPath)) {
-            int count = 0;
+        if (dataPathExists()) {
+            int count = 1;
             StreamReader sr = new StreamReader(moviesPath);
             while (!sr.EndOfStream) {
-                string? line = sr.ReadLine();
+
+                //Fetches and separtes movie titles from the ID
+                //ID: arrLine[0]
+                //Title: movieTitle
+                //Genres: movieGenres
+                string line = sr.ReadLine();
                 string[] arrLine = line.Split(',');
-                Console.WriteLine(arrLine);
+                string[] arrTitle = arrLine.SkipLast(1).ToArray();
+                arrTitle = arrTitle.Skip(1).ToArray();
+                string movieTitle = String.Join(",", arrTitle);
+                movieTitle = movieTitle.Replace("\"", "");
+
+                //Splits the genres from the titles, then joins them
+                string genreSeparator = line.Split(',').Last();
+                string[] arrGenre = genreSeparator.Split('|');
+                string movieGenres = String.Join(", ", arrGenre);
+
+                Console.WriteLine("\nID:{0} - {1}\nGenres: {2}", arrLine[0], movieTitle, movieGenres);
                 count += 1;
             } sr.Close();
 
@@ -55,8 +70,9 @@ resp = Console.ReadLine();
 }   while (resp == "1" || resp == "2");
 
 
+//Checks the library folder for the correct files
 bool dataPathExists() {
-    if (!File.Exists(linksPath))    {  
+    if (!File.Exists(linksPath))    {
         return false;
     }   else if (!File.Exists(moviesPath))  {
         return false;

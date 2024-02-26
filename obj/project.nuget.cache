@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gWF2lnBkjG4x9gnaGltIP7t+76q+P78b2YGD3PyGdvjjMKgonKniMpUK00qT92sHez9C4wvUF7lABEmwCXaN8w==",
+  "dgSpecHash": "8ebnPRCmRBXGOXXFkm6WWjmDKzMxxGTEOOIMVVCMvPsLvTYgqaCLZqBHwn3xWaeNMsYVZ7vBxtBhiY008Eutng==",
   "success": true,
-  "projectFilePath": "/media/kdbyrkett/MEMOREX USB/MovieLibrary/MovieLibrary.csproj",
+  "projectFilePath": "/home/kdbyrkett/Documents/DotNet/MovieLibrary/MovieLibrary.csproj",
   "expectedPackageFiles": [
     "/home/kdbyrkett/.nuget/packages/nlog/5.1.1/nlog.5.1.1.nupkg.sha512"
   ],
