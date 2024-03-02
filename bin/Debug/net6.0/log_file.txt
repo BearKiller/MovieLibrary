@@ -1,2 +1,8 @@
 
 2024-02-15 14:20:20.2103|FATAL|Program|Not all files are present in the library folder. Ensure links.csv, movies.csv, ratings.csv, and tags.csv are in the library folder.
+2024-03-01 18:52:45.4090|FATAL|Program|ID failed to be parsed as an INT.
+2024-03-01 18:53:02.1539|ERROR|Program|Error: ID is already present in the data. Please enter a unique ID or check if the movie is already present.
+2024-03-01 18:53:05.7096|ERROR|Program|Error: ID is already present in the data. Please enter a unique ID or check if the movie is already present.
+2024-03-01 19:08:41.4385|ERROR|Program|Error: ID is already present in the data. Please enter a unique ID or check if the movie is already present.
+2024-03-01 19:08:48.0574|ERROR|Program|Error: ID is already present in the data. Please enter a unique ID or check if the movie is already present.
+2024-03-01 19:08:50.5949|ERROR|Program|Error: ID is already present in the data. Please enter a unique ID or check if the movie is already present.
