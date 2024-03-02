@@ -6,3 +6,4 @@
 2024-03-01 19:08:41.4385|ERROR|Program|Error: ID is already present in the data. Please enter a unique ID or check if the movie is already present.
 2024-03-01 19:08:48.0574|ERROR|Program|Error: ID is already present in the data. Please enter a unique ID or check if the movie is already present.
 2024-03-01 19:08:50.5949|ERROR|Program|Error: ID is already present in the data. Please enter a unique ID or check if the movie is already present.
+2024-03-01 21:36:22.5834|FATAL|Program|Not all files are present in the library folder. Ensure links.csv, movies.csv, ratings.csv, and tags.csv are in the library folder.

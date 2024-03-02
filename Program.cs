@@ -13,6 +13,7 @@ string tagsPath = ".\\library\\tags.csv";
 
 string? resp;
 do  {
+Console.Clear();
 Console.WriteLine("\nEnter 1 to add movie to library.");
 Console.WriteLine("Enter 2 to view movie library.");
 Console.WriteLine("Enter anything else to quit.");
@@ -30,6 +31,7 @@ resp = Console.ReadLine();
 
         }   else    {
             logger.Fatal("Not all files are present in the library folder. Ensure links.csv, movies.csv, ratings.csv, and tags.csv are in the library folder.");
+            Console.ReadKey();
             resp = "3";
         }
 
@@ -59,15 +61,19 @@ resp = Console.ReadLine();
                 Console.WriteLine("\nID:{0} - {1}\nGenres: {2}", arrLine[0], movieTitle, movieGenres);
                 i += 1;
             } sr.Close();
+            Console.ReadKey();
 
         }   else    {
             logger.Fatal("Not all files are present in the library folder. Ensure links.csv, movies.csv, ratings.csv, and tags.csv are in the library folder.");
+            Console.ReadKey();
             resp = "3";
         }
 
 
         }   else    {
-        Console.WriteLine("Thank you for using KennethSoft 'Movie Library' software!");
+        Console.Clear();
+        Console.WriteLine("Bye!");
+        Console.ReadKey();
     }
 }   while (resp == "1" || resp == "2");
 
@@ -143,7 +149,6 @@ void AppendMovie() {
         //Allows the user to enter as many genres as they want until they enter a null value
         Console.WriteLine("Enter a genre (type nothing when done)");
         genre = Console.ReadLine();
-
         if (String.IsNullOrEmpty(genre)) {
             isDone = true;
         } else if (!String.IsNullOrEmpty(genre)){
@@ -153,6 +158,7 @@ void AppendMovie() {
     }
     string movieGenres = String.Join("|", genreArr);
 
+    // Outputs success to the user and appends the string to the end of the file
     Console.WriteLine("{0} was successfully added to the database.", movieTitle);
     sw.WriteLine("{0},{1} ({2}),{3}", movieID, movieTitle, movieYear, movieGenres);
     sw.Close();
