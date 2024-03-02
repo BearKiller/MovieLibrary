@@ -52,10 +52,7 @@ namespace Helper
                     Console.WriteLine("Please enter some text.");
 
                 }
-
             }
-
         }
-
     }
 }

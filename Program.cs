@@ -6,10 +6,10 @@ string path = Directory.GetCurrentDirectory() + "/nlog.config";
 // create instance of Logger
 var logger = LogManager.LoadConfiguration(path).GetCurrentClassLogger();
 
-string linksPath = "./library/links.csv";
-string moviesPath = "./library/movies.csv";
-string ratingsPath = "./library/ratings.csv";
-string tagsPath = "./library/tags.csv";
+string linksPath = ".\\library\\links.csv";
+string moviesPath = ".\\library\\movies.csv";
+string ratingsPath = ".\\library\\ratings.csv";
+string tagsPath = ".\\library\\tags.csv";
 
 string? resp;
 do  {
@@ -44,7 +44,7 @@ resp = Console.ReadLine();
                 //ID: arrLine[0]
                 //Title: movieTitle
                 //Genres: movieGenres
-                string line = sr.ReadLine();
+                string? line = sr.ReadLine();
                 string[] arrLine = line.Split(',');
                 string[] arrTitle = arrLine.SkipLast(1).ToArray();
                 arrTitle = arrTitle.Skip(1).ToArray();
